@@ -1,12 +1,18 @@
-@mixin flex-center-column{
+@import "theme";
+
+@mixin flex-center-column {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-@mixin container{
+@mixin container {
   @include flex-center-column;
   width: 100vw;
   height: 100vh;
+
+  @include theme-dark {
+    background-color: #313435;
+  }
 }

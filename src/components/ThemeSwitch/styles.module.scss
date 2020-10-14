@@ -1,0 +1,17 @@
+@import "src/theme";
+
+.themeSwitch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+
+  label {
+    margin-right: 20px;
+    @include theme-dark() {
+      color: #ffffff;
+    }
+  }
+}
