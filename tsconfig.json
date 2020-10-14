@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    /*指定输出的目录*/
+    "outDir": "./dist",
+    /*把ts文件编译成js文件的时候,同时生成对应的sourceMap文件*/
+    "sourceMap": true,
+    /*如果为true的话,ts编译器无法推断出类型的时候,依然会编译成js文件,但是会*/
+    "noImplicitAny": true,
+    /*规范*/
+    "module": "commonjs",
+    /*转换为es5*/
+    "target": "esnext",
+    "jsx": "react",
+    "esModuleInterop": true,
+    // 查找非相对路径的模块的起始位置
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      // 定义别名
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "lib": [
+      "dom",
+      "es6",
+      "es7"
+    ]
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
