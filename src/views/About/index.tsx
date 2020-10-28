@@ -1,9 +1,13 @@
-import React from "react";
-import styles from "./styles.module.scss";
-import { AppCtx } from "@/context";
+import React from 'react';
+import styles from './styles.module.scss';
+import {AppCtx} from '@/context';
 
-export default function () {
-  const { theme } = React.useContext(AppCtx);
+/**
+ * 关于
+ * @constructor
+ */
+export default function About() {
+  const {theme} = React.useContext(AppCtx);
   return (
     <div className={styles.about}>
       <h1>About</h1>

@@ -1,13 +1,15 @@
 @mixin theme-light {
   [data-theme='light'] & {
     @content;
-    color: #333333;
+
+    color: #333;
   }
 }
 
 @mixin theme-dark {
   [data-theme='dark'] & {
     @content;
-    color: #ffffff;
+
+    color: #fff;
   }
 }

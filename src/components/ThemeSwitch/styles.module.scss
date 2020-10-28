@@ -1,17 +1,18 @@
-@import "src/theme";
+@import 'src/theme';
 
-.themeSwitch {
+.theme-switch {
+  box-sizing: border-box;
+  left: 0;
+  padding: 10px;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
 
   label {
     margin-right: 20px;
+
     @include theme-dark() {
-      color: #ffffff;
+      color: #fff;
     }
   }
 }

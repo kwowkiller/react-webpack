@@ -1,4 +1,4 @@
-@import "common";
+@import 'common';
 
 * {
   margin: 0;
@@ -11,6 +11,7 @@ a {
 
 .loading {
   @include container;
-  font-size: 24px;
+
   color: #ccc;
+  font-size: 24px;
 }

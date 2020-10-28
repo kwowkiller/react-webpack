@@ -1,8 +1,12 @@
-import React from "react";
-import styles from "./styles.module.scss";
-import { Link } from "react-router-dom";
-import logo from "@/assets/react.png";
+import React from 'react';
+import styles from './styles.module.scss';
+import {Link} from 'react-router-dom';
+import logo from '@/assets/react.png';
 
+/**
+ * Home首页
+ * @constructor
+ */
 export function Home() {
   return (
     <div className={styles.home}>

@@ -1,7 +1,12 @@
-import React from "react";
-import styles from "./styles.module.scss";
-import {Theme} from "@/context";
+import React from 'react';
+import styles from './styles.module.scss';
+import {Theme} from '@/context';
 
+/**
+ * 主题切换开关
+ * @param {Object} props
+ * @constructor
+ */
 export function ThemeSwitch(props: {
   theme: Theme;
   onThemeChange: (theme: Theme) => void;
@@ -12,7 +17,7 @@ export function ThemeSwitch(props: {
         <input
           type="radio"
           name="theme"
-          onChange={props.onThemeChange.bind(null, "light")}
+          onChange={props.onThemeChange.bind(null, 'light')}
           checked={props.theme === 'light'}
         />
         light
@@ -21,7 +26,7 @@ export function ThemeSwitch(props: {
         <input
           type="radio"
           name="theme"
-          onChange={props.onThemeChange.bind(null, "dark")}
+          onChange={props.onThemeChange.bind(null, 'dark')}
           checked={props.theme === 'dark'}
         />
         dark
