@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './styles.module.scss';
 import {AppCtx} from '@/context';
+import {Button} from 'antd';
 
 /**
  * 关于
@@ -12,6 +13,7 @@ export default function About() {
     <div className={styles.about}>
       <h1>About</h1>
       <h2>当前主题为{theme}</h2>
+      <Button>Back</Button>
     </div>
   );
 }

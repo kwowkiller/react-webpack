@@ -1,6 +1,6 @@
 declare module '*.module.scss' {
-    const styles: any;
-    export = styles;
+  const styles: any;
+  export = styles;
 }
 
 declare module '*.svg';

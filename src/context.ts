@@ -6,4 +6,4 @@ export interface Context {
   theme: Theme;
 }
 
-export const AppCtx = React.createContext<Context>(null);
+export const AppCtx = React.createContext<Context>({theme: 'dark'});

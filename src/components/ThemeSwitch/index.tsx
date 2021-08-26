@@ -7,16 +7,13 @@ import {Theme} from '@/context';
  * @param {Object} props
  * @constructor
  */
-export function ThemeSwitch(props: {
-  theme: Theme;
-  onThemeChange: (theme: Theme) => void;
-}) {
+export function ThemeSwitch(props: {theme: Theme; onThemeChange: (theme: Theme) => void}) {
   return (
     <div className={styles.themeSwitch}>
       <label>
         <input
-          type="radio"
-          name="theme"
+          type='radio'
+          name='theme'
           onChange={props.onThemeChange.bind(null, 'light')}
           checked={props.theme === 'light'}
         />
@@ -24,8 +21,8 @@ export function ThemeSwitch(props: {
       </label>
       <label>
         <input
-          type="radio"
-          name="theme"
+          type='radio'
+          name='theme'
           onChange={props.onThemeChange.bind(null, 'dark')}
           checked={props.theme === 'dark'}
         />
