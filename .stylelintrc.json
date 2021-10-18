@@ -1,4 +1,5 @@
 {
+  "ignoreFiles": ["public/index.html"],
   "extends": ["stylelint-config-standard", "stylelint-config-sass-guidelines"],
   "rules": {
   }

@@ -3,6 +3,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CustomPlugin = require('./custom-plugin');
 
 module.exports = function (webpackEnv) {
   const isProduction = webpackEnv.production;
@@ -44,6 +45,7 @@ module.exports = function (webpackEnv) {
       extensions: ['.js', '.jsx', '.ts', '.tsx'],
     },
     plugins: [
+      new CustomPlugin(),
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, './public/index.html'),
       }),
@@ -83,6 +85,11 @@ module.exports = function (webpackEnv) {
             compact: isProduction,
           },
         },
+        // {
+        //   test: /\.(png|jpg)$/,
+        //   include: path.resolve(__dirname, './src'),
+        //   loader: path.resolve('./custom-loader'),
+        // },
         {
           test: /\.(css|scss)$/,
           use: [

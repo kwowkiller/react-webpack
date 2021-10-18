@@ -17,10 +17,22 @@
     "allowSyntheticDefaultImports": true,
     "paths": {
       // 定义别名
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     },
-    "lib": ["dom", "es6", "es7"]
+    "lib": [
+      "dom",
+      "es6",
+      "es7"
+    ]
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "include": [
+    "src",
+    "server"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
 }
