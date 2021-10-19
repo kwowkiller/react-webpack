@@ -16,6 +16,6 @@ app.use('^/$', (req, res) => {
 
 app.use(express.static(path.resolve(__dirname, '..', 'build')));
 
-app.listen(8000, function () {
+app.listen(8080, function () {
   console.log('ssr server started');
 });
